@@ -9,7 +9,7 @@ const getGreetingsApi = 'http://127.0.0.1:3000/api/greetings';
 
 // action creators to get greetings
 export const getGreetings = createAsyncThunk(
-    GET_GREETINGS, () => axios.get(getGreetingsApi).then((res) => {
+  GET_GREETINGS, () => axios.get(getGreetingsApi).then((res) => {
     const greetings = res.data.greeting;
     return greetings;
   }),

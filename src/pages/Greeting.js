@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useSelector, useDispatch  } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { getGreetings } from '../redux/greetings/Greeting';
 
 function Greeting() {
@@ -11,9 +11,9 @@ function Greeting() {
   }, [dispatch]);
   return (
     <div>
-        <h1>{greeting}</h1>
+      <h1>{greeting}</h1>
     </div>
-  )
+  );
 }
 
 export default Greeting;
