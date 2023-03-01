@@ -1,11 +1,16 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './styles/App.css';
 import Greeting from './pages/Greeting';
 
 function App() {
   return (
-    <div className="App">
-      <Greeting />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route exact path="/" element={<Greeting />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
